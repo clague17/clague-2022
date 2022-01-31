@@ -1,3 +1,9 @@
+### Welcome to my personal website 2022 redesign.
+
+### TODO:
+
+- [] Make a carousel for the choose your character on mobile view. In large desktop view it will just show all three.
+
 # Next.js + Tailwind CSS Example
 
 This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).

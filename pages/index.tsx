@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import { FaGithub, FaLinkedin, FaSpotify, FaInstagram } from 'react-icons/fa'
 
 export default function Home() {
   return (
@@ -21,16 +22,33 @@ export default function Home() {
             say hello
           </div>
         </div>
-        <div className="flex w-[30%] justify-center border-b-2 border-black ">
+        <div className="flex w-full justify-center border-b-2 border-black ">
           <div id="navcontainer" className="align-center flex py-1">
-            <div className="mx-5">Hello</div>
+            <div className="hover:border-r-1 align-center flex flex-col px-5 hover:border-black hover:bg-green">
+              <FaGithub />
+            </div>
+            <div className="hover:border-r-1 align-center flex flex-col px-5 hover:border-black hover:bg-red">
+              <FaLinkedin className="" />
+            </div>
+            <a href="https://open.spotify.com/user/1243374848" target="_blank">
+              <div className="hover:border-r-1 align-center flex flex-col px-5 hover:border-black hover:bg-yellow-400">
+                <FaSpotify />
+              </div>
+            </a>
+            <div className="hover:border-1 border-black px-5 hover:bg-purple">
+              <a href="https://www.instagram.com/luisclague" target="_blank">
+                <FaInstagram />
+              </a>
+            </div>
           </div>
         </div>
+        <div id="character" className="flex flex-col md:w-full md:flex-row">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
+          welcome to my corner of the internet
         </h1>
 
         <p className="mt-3 text-2xl">
