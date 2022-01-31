@@ -12,7 +12,7 @@ module.exports = {
         },
       },
       animation: {
-        looptext: 'looptext 60s linear infinite',
+        looptext: 'looptext 120s linear infinite',
       },
       fontFamily: {
         sans: ['"Mabry pro"', 'sans-serif'],

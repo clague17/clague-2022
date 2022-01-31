@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaSpotify, FaInstagram } from 'react-icons/fa'
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center py-2">
+    <div className="flex min-h-screen flex-col items-center justify-center pt-2">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
@@ -46,7 +46,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex h-[80vh] flex-col bg-red sm:w-full">
+        <div className="flex h-[90vh] flex-col bg-red sm:w-full">
           <div
             id="character"
             className="flex h-[100%] flex-col justify-between sm:flex-row"
@@ -76,22 +76,12 @@ export default function Home() {
               <div className="flex pr-3"> • Choose your own adventure</div>
               <div className="flex pr-3"> • Choose your own adventure</div>
               <div className="flex "> • Choose your own adventure !</div>
+              <div className="flex "> • Choose your own adventure !</div>
+              <div className="flex "> • Choose your own adventure !</div>
             </div>
           </div>
         </div>
       </main>
-
-      <footer className="flex h-24 w-full items-center justify-center border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="ml-2 h-4" />
-        </a>
-      </footer>
     </div>
   )
 }
