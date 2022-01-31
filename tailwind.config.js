@@ -5,6 +5,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        looptext: {
+          '0%': { transform: 'translateX(0%)' },
+          '100%': { transform: 'translateX(-150%)' },
+        },
+      },
+      animation: {
+        looptext: 'looptext 60s linear infinite',
+      },
       fontFamily: {
         sans: ['"Mabry pro"', 'sans-serif'],
       },

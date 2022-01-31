@@ -3,3 +3,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.animation {
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  position: relative;
+  animation: example 2s infinite;
+}
+
+@keyframes example {
+  0%,
+  100% {
+    left: 0;
+  }
+
+  50% {
+    left: 200px;
+  }
+}
