@@ -1,7 +1,12 @@
 import Head from 'next/head'
+import { useRef, useEffect } from 'react'
 import { FaGithub, FaLinkedin, FaSpotify, FaInstagram } from 'react-icons/fa'
 
 export default function Home() {
+  const ref = useRef(null)
+  useEffect(() => {
+    import('@lottiefiles/lottie-player')
+  })
   return (
     <div className="flex min-h-screen flex-col items-center justify-center pt-2">
       <Head>
@@ -51,14 +56,59 @@ export default function Home() {
             id="character"
             className="flex h-[100%] flex-col justify-between sm:flex-row"
           >
-            <div id="builder" className="w-[33%] bg-green">
-              <h1>the builder</h1>
+            <div
+              id="builder"
+              className="align-center flex w-[33%] flex-col justify-center bg-green"
+            >
+              <div id="builder-card" className="card-wrap">
+                <div className="card-thumbnail">
+                  <lottie-player
+                    id="firstLottie"
+                    ref={ref}
+                    autoplay
+                    loop
+                    mode="normal"
+                    src="https://assets7.lottiefiles.com/private_files/lf30_zSGy1w.json"
+                    style={{ width: '300px', height: '300px' }}
+                  ></lottie-player>
+                </div>
+                <div className="card-text">
+                  <h1 className="py-3 text-3xl">The Builder</h1>
+                  <p>
+                    Choose me for info on what I've worked on and what I can
+                    bring to the table. If you're a recruiter or interested in
+                    Luis the engineer, pick me!
+                  </p>
+                </div>
+              </div>
             </div>
             <div id="person" className="w-[34%] bg-pink">
-              <p>the person</p>
+              <div id="builder-card" className="card-wrap">
+                <div className="card-thumbnail"></div>
+                <div className="card-text">
+                  <h1 className="text-3xl">The Person</h1>
+                  <p>This is the more personal side of me.</p>
+                  <p>
+                    Maybe you're curious about the time I jumped out of an
+                    airplane, or the time I lived in a different country for
+                    four months.
+                  </p>
+                  <p>Pick me and pull up a chair for story time!</p>
+                </div>
+              </div>
             </div>
-            <div id="curious" className=" h-[70%] w-[33%] bg-purple">
-              <p>the curious</p>
+            <div id="curious" className="w-[33%] bg-purple">
+              <div id="builder-card" className="card-wrap">
+                <div className="card-thumbnail"></div>
+                <div className="card-text">
+                  <h1 className="text-3xl">The Curious</h1>
+                  <p>
+                    Choose me for info on what I've worked on and what I can
+                    bring to the table. If you're a recruiter or interested in
+                    Luis the engineer, pick me!
+                  </p>
+                </div>
+              </div>
             </div>
             <div id="choose-your-character"></div>
           </div>
@@ -71,13 +121,14 @@ export default function Home() {
               className="flex h-[10vh] w-full animate-looptext whitespace-nowrap text-6xl antialiased"
             >
               <div className="flex pr-3">• Choose your own adventure!</div>
-              <div className="flex pr-3"> • Choose your own adventure</div>
-              <div className="flex pr-3"> • Choose your own adventure</div>
-              <div className="flex pr-3"> • Choose your own adventure</div>
-              <div className="flex pr-3"> • Choose your own adventure</div>
-              <div className="flex "> • Choose your own adventure !</div>
-              <div className="flex "> • Choose your own adventure !</div>
-              <div className="flex "> • Choose your own adventure !</div>
+              <div className="flex pr-3">• Choose your own adventure!</div>
+              <div className="flex pr-3">• Choose your own adventure!</div>
+              <div className="flex pr-3">• Choose your own adventure!</div>
+              <div className="flex pr-3">• Choose your own adventure!</div>
+              <div className="flex pr-3">• Choose your own adventure!</div>
+              <div className="flex pr-3">• Choose your own adventure!</div>
+              <div className="flex pr-3">• Choose your own adventure!</div>
+              <div className="flex pr-3">• Choose your own adventure!</div>
             </div>
           </div>
         </div>

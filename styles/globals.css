@@ -4,6 +4,25 @@
 @tailwind components;
 @tailwind utilities;
 
+.card-wrap {
+  @apply mx-10 flex h-[70%] max-w-[90%] flex-col rounded-2xl border-2 border-black bg-yellow-500;
+}
+
+.card-thumbnail {
+  @apply rounded-t-2xl bg-pink;
+}
+
+.card-text {
+  @apply m-auto rounded-b-2xl border-t-2  border-black bg-white px-2;
+}
+
+.card-wrap:hover {
+  box-shadow: 6px 6px 0 0 #000;
+  -webkit-transform: translate(-6px, -6px);
+  -ms-transform: translate(-6px, -6px);
+  transform: translate(-6px, -6px);
+}
+
 .animation {
   width: 10px;
   height: 10px;
