@@ -18,10 +18,8 @@ export default function Home() {
         <img src="/luis_banner.svg" alt="Luis Clague" className="mx- w-full" />
         <div className="flex w-full justify-center border-t-2 border-b-2 border-black pl-2">
           <div id="navcontainer" className="align-center flex py-5">
-            <div className="mx-5">Hello</div>
-            <div className="mx-5 border-transparent transition duration-150 hover:border-black">
-              Hello
-            </div>
+            <div className="navcontainer-content">Writing</div>
+            <div className="navcontainer-content">About Me</div>
           </div>
           <div className="align-center flex border-l-2 border-r-2 border-black bg-black p-2 py-5 text-white hover:bg-accent hover:text-black">
             say hello
@@ -56,20 +54,17 @@ export default function Home() {
             id="character"
             className="flex h-[100%] flex-col justify-between sm:flex-row"
           >
-            <div
-              id="builder"
-              className="align-center flex w-[33%] flex-col justify-center bg-green"
-            >
+            <div id="builder" className="character-thirds w-[33%] bg-green">
               <div id="builder-card" className="card-wrap">
                 <div className="card-thumbnail">
                   <lottie-player
                     id="firstLottie"
+                    className="border-l-2 border-r-2 border-black"
                     ref={ref}
                     autoplay
                     loop
                     mode="normal"
-                    src="https://assets7.lottiefiles.com/private_files/lf30_zSGy1w.json"
-                    style={{ width: '300px', height: '300px' }}
+                    src="https://assets10.lottiefiles.com/packages/lf20_tfqocvhu.json"
                   ></lottie-player>
                 </div>
                 <div className="card-text">
@@ -82,11 +77,21 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div id="person" className="w-[34%] bg-pink">
+            <div id="person" className="character-thirds w-[34%] bg-pink">
               <div id="builder-card" className="card-wrap">
-                <div className="card-thumbnail"></div>
+                <div className="card-thumbnail">
+                  <lottie-player
+                    id="firstLottie"
+                    className="border-l-2 border-r-2 border-black"
+                    ref={ref}
+                    autoplay
+                    loop
+                    mode="normal"
+                    src="https://assets7.lottiefiles.com/private_files/lf30_lh5nbalk.json"
+                  ></lottie-player>
+                </div>
                 <div className="card-text">
-                  <h1 className="text-3xl">The Person</h1>
+                  <h1 className="py-3 text-3xl">The Person</h1>
                   <p>This is the more personal side of me.</p>
                   <p>
                     Maybe you're curious about the time I jumped out of an
@@ -97,15 +102,28 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div id="curious" className="w-[33%] bg-purple">
-              <div id="builder-card" className="card-wrap">
-                <div className="card-thumbnail"></div>
+            <div id="curious" className="character-thirds w-[33%] bg-purple">
+              <div className="card-wrap">
+                <div className="card-thumbnail">
+                  <lottie-player
+                    id="curiousLottie"
+                    className="border-l-2 border-r-2 border-black"
+                    ref={ref}
+                    autoplay
+                    loop
+                    mode="normal"
+                    src="https://assets10.lottiefiles.com/packages/lf20_xk2hb3ks.json "
+                  ></lottie-player>
+                </div>
                 <div className="card-text">
-                  <h1 className="text-3xl">The Curious</h1>
+                  <h1 className="py-3 text-3xl">The Curious</h1>
                   <p>
-                    Choose me for info on what I've worked on and what I can
-                    bring to the table. If you're a recruiter or interested in
-                    Luis the engineer, pick me!
+                    This is what I'm currently curious about and trying to
+                    learn.
+                  </p>
+                  <p>
+                    Pick me and let's indulge in an exploratory chat about
+                    everything and nothing.
                   </p>
                 </div>
               </div>
