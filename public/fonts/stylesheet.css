@@ -104,6 +104,7 @@
     font-display: swap;
 }
 
+/* Note: These hosted styles could very well change. If I weren't lazy, I would go through and download these manually like I did for BubbleGum */
 @font-face {
     font-family: 'Mabry pro';
     src: url('https://assets.website-files.com/6171b265e5c8aa59b42c3472/6171b3abf4abd818c2515f2c_mabry-regular-pro.woff2') format('woff2'), url('https://assets.website-files.com/6171b265e5c8aa59b42c3472/6171b3aba26b9ae49be96139_mabry-regular-pro.eot') format('embedded-opentype'), url('https://assets.website-files.com/6171b265e5c8aa59b42c3472/6171b3aba8c2d7bc694cef2e_mabry-regular-pro.woff') format('woff'), url('https://assets.website-files.com/6171b265e5c8aa59b42c3472/6171b3ab65f29c7fe7f7e217_mabry-regular-pro.ttf') format('truetype');

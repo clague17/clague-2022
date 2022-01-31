@@ -8,7 +8,24 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
+      <main className="px-05 flex w-full flex-1 flex-col items-center justify-center text-center">
+        <img src="/luis_banner.svg" alt="Luis Clague" className="mx- w-full" />
+        <div className="flex w-full justify-center border-t-2 border-b-2 border-black pl-2">
+          <div id="navcontainer" className="align-center flex py-5">
+            <div className="mx-5">Hello</div>
+            <div className="mx-5 border-transparent transition duration-150 hover:border-black">
+              Hello
+            </div>
+          </div>
+          <div className="align-center flex border-l-2 border-r-2 border-black bg-black p-2 py-5 text-white hover:bg-accent hover:text-black">
+            say hello
+          </div>
+        </div>
+        <div className="flex w-[30%] justify-center border-b-2 border-black ">
+          <div id="navcontainer" className="align-center flex py-1">
+            <div className="mx-5">Hello</div>
+          </div>
+        </div>
         <h1 className="text-6xl font-bold">
           Welcome to{' '}
           <a className="text-blue-600" href="https://nextjs.org">
