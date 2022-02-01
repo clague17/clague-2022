@@ -81,32 +81,32 @@ export default function Builder() {
               <div className="card-thumbnail">
                 <img
                   src="/pokecandy-cap.gif"
-                  alt="ricehouse"
+                  alt="pokecandy"
                   className="flex h-64 object-cover md:max-w-[40vw]"
                 />
               </div>
               <div className="flex flex-col p-4 text-left">
                 <p className="text-lg font-light">
-                  how do I get involved with blockchain?
+                  what are NFTs and how do they work?
                 </p>
-                <p className="text-3xl font-bold">pokéDEX</p>
+                <p className="text-3xl font-bold">PokéCandy Drop</p>
                 <div className="flex w-full py-2">
                   <p className="border-2 border-black bg-info px-2">
                     Typescript
                   </p>
                   <p className="border-t-2 border-b-2 border-r-2 border-black bg-yellow-300 px-2">
-                    TailwindCSS
+                    ChakraUI
                   </p>
-                  <p className="border-t-2 border-b-2 border-r-2 border-black bg-orange px-2">
-                    Rust
+                  <p className="border-t-2 border-b-2 border-r-2 border-black bg-green px-2">
+                    Anchor
                   </p>
                 </div>
                 <p>
-                  A fully functional decentralized exchange live on Solana
-                  devnet. Playground for learning about token accounts, PDAs,
-                  CPIs, and all things Solana development. Learned Rust basics
-                  to implement smart contract that regulates the escrow program
-                  necessary for the DEX.
+                  A fully functional CandyMachine v1 NFT minting site live on
+                  Solana devnet. Playground for learning about integrating with
+                  Phantom, using Anchor and solana/web3.js to create token
+                  accounts and mint to users. Mint pokemon cards on Solana
+                  devnet!
                 </p>
               </div>
             </div>
@@ -119,11 +119,13 @@ export default function Builder() {
         <div className="flex flex-col md:m-auto md:w-[80%] md:flex-row md:flex-row lg:w-[60%]">
           <div id="project" className="project-card">
             <div className="card-thumbnail">
-              <img
-                src="/ricehouse.png"
-                alt="ricehouse"
-                className="flex h-64 object-cover md:max-w-[40vw]"
-              />
+              <div className="md:rounder-l-lg rounded-lg border-black bg-white md:rounded-r-none md:border-r-2">
+                <img
+                  src="/ricehouse.png"
+                  alt="ricehouse"
+                  className="flex h-64 object-cover md:max-w-[40vw]"
+                />
+              </div>
             </div>
             <div className="flex flex-col p-4 text-left">
               <p className="text-lg font-light">
