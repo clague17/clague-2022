@@ -13,11 +13,11 @@
 }
 
 .card-thumbnail {
-  @apply flex justify-center border-b-2 border-black bg-gray-900 md:border-none;
+  @apply flex justify-center rounded-2xl border-b-2 border-black bg-yellow-900 md:border-none;
 }
 
 .card-text {
-  @apply rounded-b-2xl border-t-2  border-black bg-white px-2;
+  @apply rounded-b-2xl border-t-2 border-black bg-white px-2;
 }
 
 .navcontainer-content {
