@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import { useRef, useEffect } from 'react'
+import Link from 'next/link'
 import { FaGithub, FaLinkedin, FaSpotify, FaInstagram } from 'react-icons/fa'
 
 export default function Home() {
@@ -10,7 +11,7 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center pt-2">
       <Head>
-        <title>Create Next App</title>
+        <title>Luis Clague</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -54,29 +55,31 @@ export default function Home() {
             id="character-desktop"
             className="flex h-[100%] flex-col justify-between sm:flex-row"
           >
-            <div id="builder" className="character-thirds bg-yellow w-[33%]">
-              <div id="builder-card" className="card-wrap">
-                <div className="card-thumbnail">
-                  <lottie-player
-                    id="firstLottie"
-                    className="border-l-2 border-r-2 border-black"
-                    ref={ref}
-                    autoplay
-                    loop
-                    mode="normal"
-                    src="https://assets10.lottiefiles.com/packages/lf20_tfqocvhu.json"
-                  ></lottie-player>
-                </div>
-                <div className="card-text">
-                  <h1 className="py-3 text-3xl">The Builder</h1>
-                  <p>
-                    Choose me for info on what I've worked on and what I can
-                    bring to the table. If you're a recruiter or interested in
-                    Luis the engineer, pick me!
-                  </p>
+            <Link href="/builder">
+              <div id="builder" className="character-thirds bg-yellow w-[33%]">
+                <div id="builder-card" className="card-wrap">
+                  <div className="card-thumbnail">
+                    <lottie-player
+                      id="firstLottie"
+                      className="border-l-2 border-r-2 border-black"
+                      ref={ref}
+                      autoplay
+                      loop
+                      mode="normal"
+                      src="https://assets10.lottiefiles.com/packages/lf20_tfqocvhu.json"
+                    ></lottie-player>
+                  </div>
+                  <div className="card-text">
+                    <h1 className="py-3 text-3xl">The Builder</h1>
+                    <p>
+                      Choose me for info on what I've worked on and what I can
+                      bring to the table. If you're a recruiter or interested in
+                      Luis the engineer, pick me!
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
             <div id="person" className="character-thirds w-[34%] bg-pink">
               <div id="person-card" className="card-wrap">
                 <div className="card-thumbnail">
