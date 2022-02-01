@@ -13,7 +13,7 @@
 }
 
 .card-thumbnail {
-  @apply flex max-h-[100%] justify-center rounded-t-2xl;
+  @apply flex justify-center border-b-2 border-black md:border-none;
 }
 
 .card-text {
