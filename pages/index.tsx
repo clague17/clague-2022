@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center pt-2">
       <Head>
-        <title>Luis Clague</title>
+        <title>Luis</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className="px-05 flex w-full flex-1 flex-col items-center justify-center text-center">
-        <img src="/luis_banner.svg" alt="Luis Clague" className="mx- w-full" />
+        <img src="/luis_banner.svg" alt="Luis Clague" className="w-full" />
         <div className="flex w-full justify-center border-t-2 border-b-2 border-black pl-2">
           <div id="navcontainer" className="align-center flex py-5">
             <div className="navcontainer-content">Writing</div>
