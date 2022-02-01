@@ -49,12 +49,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="flex h-[90vh] flex-col bg-red sm:w-full">
+        <div className="flex h-[90vh] flex-col bg-green sm:w-full">
           <div
-            id="character"
+            id="character-desktop"
             className="flex h-[100%] flex-col justify-between sm:flex-row"
           >
-            <div id="builder" className="character-thirds w-[33%] bg-green">
+            <div id="builder" className="character-thirds bg-yellow w-[33%]">
               <div id="builder-card" className="card-wrap">
                 <div className="card-thumbnail">
                   <lottie-player
@@ -78,7 +78,7 @@ export default function Home() {
               </div>
             </div>
             <div id="person" className="character-thirds w-[34%] bg-pink">
-              <div id="builder-card" className="card-wrap">
+              <div id="person-card" className="card-wrap">
                 <div className="card-thumbnail">
                   <lottie-player
                     id="firstLottie"
@@ -87,12 +87,12 @@ export default function Home() {
                     autoplay
                     loop
                     mode="normal"
-                    src="https://assets7.lottiefiles.com/private_files/lf30_lh5nbalk.json"
+                    src="https://assets7.lottiefiles.com/packages/lf20_QIvVpl.json"
                   ></lottie-player>
                 </div>
+
                 <div className="card-text">
                   <h1 className="py-3 text-3xl">The Person</h1>
-                  <p>This is the more personal side of me.</p>
                   <p>
                     Maybe you're curious about the time I jumped out of an
                     airplane, or the time I lived in a different country for
@@ -106,7 +106,7 @@ export default function Home() {
               <div className="card-wrap">
                 <div className="card-thumbnail">
                   <lottie-player
-                    id="curiousLottie"
+                    id="Lottie"
                     className="border-l-2 border-r-2 border-black"
                     ref={ref}
                     autoplay
@@ -128,7 +128,6 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div id="choose-your-character"></div>
           </div>
           <div
             id="looping-text-track"
