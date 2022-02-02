@@ -38,18 +38,14 @@ export default function Builder() {
             and cool shiny things that solve tough difficult problems
           </p>
         </div>
-        <div id="projects-list" className="w-30% bg-gray-400">
-          <div id="md:w-[80%] md:m-auto lg:w-[60%] text-left">
-            <p className="text-xl">January 2022</p>
-            <p className="text-xl">--</p>
-          </div>
-          <div className="flex flex-col py-3 md:m-auto md:w-[80%] lg:w-[60%]">
+        <div id="projects-list">
+          <div className="z-5 h-80vh flex flex-col py-3 md:m-auto md:w-[80vh] lg:w-[60%]">
             <div id="project" className="project-card">
               <div className="card-thumbnail">
                 <img
                   src="/new-poke-dex-cap.gif"
                   alt="ricehouse"
-                  className="flex h-64 object-cover md:max-w-[40vw]"
+                  className="object-contain"
                 />
               </div>
               <div className="flex flex-col p-4 text-left">
@@ -82,7 +78,7 @@ export default function Builder() {
                 <img
                   src="/pokecandy-cap.gif"
                   alt="pokecandy"
-                  className="flex h-64 object-cover md:max-w-[40vw]"
+                  className="object-contain"
                 />
               </div>
               <div className="flex flex-col p-4 text-left">
@@ -112,18 +108,14 @@ export default function Builder() {
             </div>
           </div>
         </div>
-        <div id="md:w-[80%] md:m-auto lg:w-[60%] justify-start">
-          <p className="text-7xl">January 2021</p>
-          <p className="text-7xl">--</p>
-        </div>
         <div className="flex flex-col md:m-auto md:w-[80%] md:flex-row md:flex-row lg:w-[60%]">
           <div id="project" className="project-card">
-            <div className="card-thumbnail">
-              <div className="md:rounder-l-lg rounded-lg border-black bg-white md:rounded-r-none md:border-r-2">
+            <div className="card-thumbnail md:w-full">
+              <div className="md:rounder-l-lg w-full rounded-lg border-black bg-white md:rounded-r-none md:border-r-2">
                 <img
                   src="/ricehouse.png"
                   alt="ricehouse"
-                  className="flex h-64 object-cover md:max-w-[40vw]"
+                  className="w-full object-contain"
                 />
               </div>
             </div>

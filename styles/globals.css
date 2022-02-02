@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 .card-wrap {
-  @apply mx-10 flex max-w-[90%] flex-col rounded-2xl border-2 border-black bg-yellow-300;
+  @apply mx-10 flex max-w-[90%] flex-col rounded-xl border-2 border-black bg-yellow-300;
 }
 
 .character-thirds {
@@ -13,7 +13,7 @@
 }
 
 .card-thumbnail {
-  @apply flex justify-center rounded-2xl border-b-2 border-black bg-yellow-900 md:border-none;
+  @apply flex justify-center rounded-lg border-b-2 border-black bg-green md:w-full md:border-none;
 }
 
 .card-text {
@@ -25,7 +25,7 @@
 }
 
 .project-card {
-  @apply mx-5 my-2 flex flex-col rounded-lg border-2 border-black bg-gray-100 hover:bg-gray-300 md:flex-row;
+  @apply mx-5 my-2 flex flex-col rounded-lg border-2 border-black bg-gray-100 hover:bg-gray-300 md:h-72 md:flex-row;
 }
 
 .project-date-divider {
