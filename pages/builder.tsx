@@ -41,7 +41,7 @@ export default function Builder() {
         <div id="projects-list">
           <div className="z-5 h-80vh flex flex-col py-3 md:m-auto md:w-[80vh] lg:w-[60%]">
             <div id="project" className="project-card">
-              <div className="card-thumbnail">
+              <div className="project-card-thumbnail">
                 <img
                   src="/new-poke-dex-cap.gif"
                   alt="ricehouse"
@@ -74,7 +74,7 @@ export default function Builder() {
               </div>
             </div>
             <div className="project-card">
-              <div className="card-thumbnail">
+              <div className="project-card-thumbnail">
                 <img
                   src="/pokecandy-cap.gif"
                   alt="pokecandy"
@@ -110,7 +110,7 @@ export default function Builder() {
         </div>
         <div className="flex flex-col md:m-auto md:w-[80%] md:flex-row md:flex-row lg:w-[60%]">
           <div id="project" className="project-card">
-            <div className="card-thumbnail md:w-full">
+            <div className="project-card-thumbnail md:w-full">
               <div className="md:rounder-l-lg w-full rounded-lg border-black bg-white md:rounded-r-none md:border-r-2">
                 <img
                   src="/ricehouse.png"

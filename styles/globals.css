@@ -12,8 +12,12 @@
   @apply flex flex-col justify-center;
 }
 
-.card-thumbnail {
+.project-card-thumbnail {
   @apply flex justify-center rounded-lg border-b-2 border-black bg-green md:w-full md:border-none;
+}
+
+.card-thumbnail {
+  @apply flex justify-center rounded-t-lg border-b-2 border-black bg-yellow-900 md:w-full md:border-none;
 }
 
 .card-text {
