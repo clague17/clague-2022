@@ -13,7 +13,7 @@
 }
 
 .card-thumbnail {
-  @apply flex justify-center rounded-t-lg border-b-2 border-black bg-yellow-900 md:w-full md:border-none;
+  @apply flex justify-center rounded-t-lg border-y-2 border-black bg-yellow-900 md:w-full md:border-none;
 }
 
 .card-text {
