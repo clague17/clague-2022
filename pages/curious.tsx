@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import Image from 'next/image'
 
-export default function Builder() {
+export default function Curious() {
   return (
     <div className="flex min-h-screen flex-col items-center">
       <Head>

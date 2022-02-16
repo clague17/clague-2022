@@ -2,6 +2,8 @@ import Head from 'next/head'
 import { useRef, useEffect } from 'react'
 import Link from 'next/link'
 import { FaGithub, FaLinkedin, FaSpotify, FaInstagram } from 'react-icons/fa'
+import Marquee from '../components/Marquee'
+import CharacterCard from '../components/CharacterCard'
 
 export default function Home() {
   const ref = useRef(null)
@@ -35,7 +37,7 @@ export default function Home() {
             </a>
             <a href="https://www.linkedin.com/in/luisclague/" target="_blank">
               <div className="hover:border-r-1 align-center flex flex-col px-5 hover:border-black hover:bg-pink">
-                <FaLinkedin className="" />
+                <FaLinkedin />
               </div>
             </a>
             <a href="https://open.spotify.com/user/1243374848" target="_blank">
@@ -43,113 +45,76 @@ export default function Home() {
                 <FaSpotify />
               </div>
             </a>
-            <div className="hover:border-1 border-black px-5 hover:bg-purple">
-              <a href="https://www.instagram.com/luisclague" target="_blank">
+            <a href="https://www.instagram.com/luisclague" target="_blank">
+              <div className="hover:border-1 border-black px-5 hover:bg-purple">
                 <FaInstagram />
-              </a>
-            </div>
+              </div>
+            </a>
           </div>
         </div>
-        <div className="flex h-[90vh] flex-col bg-green sm:w-full">
-          <div
-            id="character-desktop"
-            className="flex h-[100%] flex-col justify-between sm:flex-row"
-          >
-            <Link href="/builder">
-              <div id="builder" className="character-thirds bg-yellow w-[33%]">
-                <div id="builder-card" className="card-wrap">
-                  <div className="card-thumbnail">
-                    <lottie-player
-                      id="firstLottie"
-                      className="border-l-2 border-r-2 border-black"
-                      ref={ref}
-                      autoplay
-                      loop
-                      mode="normal"
-                      src="https://assets10.lottiefiles.com/packages/lf20_tfqocvhu.json"
-                    ></lottie-player>
-                  </div>
-                  <div className="card-text">
-                    <h1 className="py-3 text-3xl">The Builder</h1>
-                    <p>
-                      Choose me for info on what I've worked on and what I can
-                      bring to the table. If you're a recruiter or interested in
-                      Luis the engineer, pick me!
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </Link>
-            <div id="person" className="character-thirds w-[34%] bg-pink">
-              <div id="person-card" className="card-wrap">
-                <div className="card-thumbnail">
-                  <lottie-player
-                    id="firstLottie"
-                    className="border-l-2 border-r-2 border-black"
-                    ref={ref}
-                    autoplay
-                    loop
-                    mode="normal"
-                    src="https://assets7.lottiefiles.com/packages/lf20_QIvVpl.json"
-                  ></lottie-player>
-                </div>
-
-                <div className="card-text">
-                  <h1 className="py-3 text-3xl">The Person</h1>
-                  <p>
-                    Maybe you're curious about the time I jumped out of an
-                    airplane, or the time I lived in a different country for
-                    four months.
-                  </p>
-                  <p>Pick me and pull up a chair for story time!</p>
-                </div>
-              </div>
-            </div>
-            <div id="curious" className="character-thirds w-[33%] bg-purple">
-              <div className="card-wrap">
-                <div className="card-thumbnail">
-                  <lottie-player
-                    id="Lottie"
-                    className="border-l-2 border-r-2 border-black"
-                    ref={ref}
-                    autoplay
-                    loop
-                    mode="normal"
-                    src="https://assets10.lottiefiles.com/packages/lf20_xk2hb3ks.json "
-                  ></lottie-player>
-                </div>
-                <div className="card-text">
-                  <h1 className="py-3 text-3xl">The Curious</h1>
-                  <p>
-                    This is what I'm currently curious about and trying to
-                    learn.
-                  </p>
-                  <p>
-                    Pick me and let's indulge in an exploratory chat about
-                    everything and nothing.
-                  </p>
-                </div>
-              </div>
-            </div>
+        <div className="flex w-full flex-col bg-red md:h-[90vh]">
+          <div className="md:hidden">
+            <Marquee text={'• Choose your own adventure!'} />
           </div>
           <div
-            id="looping-text-track"
-            className="flex overflow-hidden border-b-2 border-black bg-black py-[1.5rem] text-white"
+            id="character-desktop"
+            className="flex h-[100%] flex-col justify-between md:flex-row"
           >
-            <div
-              id="looping-text-content"
-              className="flex h-[10vh] w-full animate-looptext whitespace-nowrap text-6xl antialiased"
-            >
-              <div className="flex pr-3">• Choose your own adventure!</div>
-              <div className="flex pr-3">• Choose your own adventure!</div>
-              <div className="flex pr-3">• Choose your own adventure!</div>
-              <div className="flex pr-3">• Choose your own adventure!</div>
-              <div className="flex pr-3">• Choose your own adventure!</div>
-              <div className="flex pr-3">• Choose your own adventure!</div>
-              <div className="flex pr-3">• Choose your own adventure!</div>
-              <div className="flex pr-3">• Choose your own adventure!</div>
-              <div className="flex pr-3">• Choose your own adventure!</div>
+            <div className="character-thirds bg-green md:w-[33%]">
+              <Link href="/builder">
+                <div className="">
+                  <CharacterCard
+                    title={'The Builder'}
+                    subtitle={
+                      "Choose me for info on what I've worked on and what I can bring to the table."
+                    }
+                    description={
+                      "If you're a recruiter or interested in Luis the engineer, pick me!"
+                    }
+                    lottieSrc={
+                      'https://assets10.lottiefiles.com/packages/lf20_tfqocvhu.json'
+                    }
+                  />
+                </div>
+              </Link>
             </div>
+            <div id="person" className="character-thirds bg-pink md:w-[34%]">
+              <Link href="/person">
+                <div>
+                  <CharacterCard
+                    title={'The Person'}
+                    subtitle={
+                      "Maybe you're curious about the time I jumped out of an airplane, or the time I lived in a different country for four months"
+                    }
+                    description={'Pick me and pull up a chair for story time!'}
+                    lottieSrc={
+                      'https://assets7.lottiefiles.com/packages/lf20_QIvVpl.json'
+                    }
+                  />
+                </div>
+              </Link>
+            </div>
+            <div id="curious" className="character-thirds bg-purple md:w-[33%]">
+              <Link href="/curious">
+                <div>
+                  <CharacterCard
+                    title={'The Curious'}
+                    subtitle={
+                      "This is what I'm currently curious about and trying to learn"
+                    }
+                    description={
+                      "Pick  me and let's indulge in an exploratory chat about everything and nothing"
+                    }
+                    lottieSrc={
+                      'https://assets10.lottiefiles.com/packages/lf20_xk2hb3ks.json'
+                    }
+                  />
+                </div>
+              </Link>
+            </div>
+          </div>
+          <div className="hidden md:flex">
+            <Marquee text={'• Choose your own adventure!'} />
           </div>
         </div>
       </main>
