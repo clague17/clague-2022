@@ -19,13 +19,9 @@ export default function Builder() {
             <img src="/luis_banner.svg" alt="Luis Clague" className="w-64" />
           </Link>
           <div id="right-navbar" className="flex">
-            <div className="navcontainer-content flex py-5 text-center">
-              Writing
-            </div>
-            <div className="navcontainer-content flex py-5 text-center">
-              About Me
-            </div>
-            <div className="align-center flex border-2 border-black bg-black p-2 py-5 text-white hover:bg-accent hover:text-black">
+            <div className="navcontainer-content m-auto flex">Writing</div>
+            <div className="navcontainer-content m-auto flex">About Me</div>
+            <div className="flex border-black bg-black p-2 py-5 text-white hover:border-t-0 hover:border-b-0 hover:bg-accent hover:text-black sm:border-2">
               say hello
             </div>
           </div>
@@ -40,13 +36,13 @@ export default function Builder() {
           </p>
         </div>
         <div id="projects-list">
-          <div className="z-5 h-80vh flex flex-col py-3 md:m-auto md:w-[80vh] lg:w-[60%]">
+          <div className="z-5 flex flex-col py-3 md:m-auto lg:w-[60%]">
             <div id="project" className="project-card">
               <div className="project-card-thumbnail">
                 <img
                   src="/new-poke-dex-cap.gif"
-                  alt="ricehouse"
-                  className="object-contain"
+                  alt="poke-dex"
+                  className="object-cover"
                 />
               </div>
               <div className="flex flex-col p-4 text-left">
@@ -67,10 +63,9 @@ export default function Builder() {
                 </div>
                 <p>
                   A fully functional decentralized exchange live on Solana
-                  devnet. Playground for learning about token accounts, PDAs,
-                  CPIs, and all things Solana development. Learned Rust basics
-                  to implement smart contract that regulates the escrow program
-                  necessary for the DEX.
+                  devnet. Learned about token accounts, PDAs, CPIs, and Rust
+                  basics to implement smart contract that regulates the escrow
+                  program necessary for the DEX.
                 </p>
               </div>
             </div>
@@ -79,13 +74,11 @@ export default function Builder() {
                 <img
                   src="/pokecandy-cap.gif"
                   alt="pokecandy"
-                  className="object-contain"
+                  className="object-cover"
                 />
               </div>
               <div className="flex flex-col p-4 text-left">
-                <p className="text-lg font-light">
-                  what are NFTs and how do they work?
-                </p>
+                <p className="text-lg font-light">how do solana NFTs work?</p>
                 <p className="text-3xl font-bold">PokéCandy Drop</p>
                 <div className="flex w-full py-2">
                   <p className="border-2 border-black bg-info px-2">
@@ -99,11 +92,9 @@ export default function Builder() {
                   </p>
                 </div>
                 <p>
-                  A fully functional CandyMachine v1 NFT minting site live on
-                  Solana devnet. Playground for learning about integrating with
-                  Phantom, using Anchor and solana/web3.js to create token
-                  accounts and mint to users. Mint pokemon cards on Solana
-                  devnet!
+                  A CandyMachine v1 NFT minting site live on Solana devnet.
+                  Playground for integrating Phantom, using Anchor and
+                  solana/web3.js to create token accounts and mint to users.
                 </p>
               </div>
             </div>
@@ -111,12 +102,12 @@ export default function Builder() {
         </div>
         <div className="flex flex-col md:m-auto md:w-[80%] md:flex-row md:flex-row lg:w-[60%]">
           <div id="project" className="project-card">
-            <div className="project-card-thumbnail md:w-full">
-              <div className="md:rounder-l-lg w-full rounded-lg border-black bg-white md:rounded-r-none md:border-r-2">
+            <div className="project-card-thumbnail">
+              <div className="w-full border-black bg-white md:rounded-l-lg md:border-r-2">
                 <img
                   src="/ricehouse.png"
                   alt="ricehouse"
-                  className="w-full object-contain"
+                  className="w-full object-contain p-4"
                 />
               </div>
             </div>
