@@ -15,7 +15,7 @@ export default function Builder() {
           id="navcontainer"
           className="align-center mx-5 flex w-full flex-row justify-between"
         >
-          <Link href="/" as="button">
+          <Link href="/">
             <img src="/luis_banner.svg" alt="Luis Clague" className="w-64" />
           </Link>
           <div id="right-navbar" className="flex">
