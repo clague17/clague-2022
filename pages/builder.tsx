@@ -25,7 +25,7 @@ export default function Builder() {
             <div className="navcontainer-content flex py-5 text-center">
               About Me
             </div>
-            <div className="align-center flex border-l-2 border-r-2 border-black bg-black p-2 py-5 text-white hover:bg-accent hover:text-black">
+            <div className="align-center flex border-2 border-black bg-black p-2 py-5 text-white hover:bg-accent hover:text-black">
               say hello
             </div>
           </div>
