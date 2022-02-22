@@ -35,13 +35,16 @@ export default function Builder() {
           </p>
         </div>
         <div className="main-content">
-          <div className="rounded-xl bg-black">
-            <div className="p-1">
-              <LiteYouTubeEmbed
-                id="hRySxLdrRZQ"
-                title="Soccer across europe"
-                poster="maxresdefault"
-              />
+          <div id="person-item">
+            <h1 className="py-3 text-4xl">I love soccer</h1>
+            <div className="rounded-xl bg-black">
+              <div className="p-1">
+                <LiteYouTubeEmbed
+                  id="hRySxLdrRZQ"
+                  title="Soccer across europe"
+                  poster="maxresdefault"
+                />
+              </div>
             </div>
           </div>
         </div>
