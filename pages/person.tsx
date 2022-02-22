@@ -14,17 +14,13 @@ export default function Builder() {
           id="navcontainer"
           className="align-center mx-5 flex w-full flex-row justify-between"
         >
-          <Link href="/" as="button">
+          <Link href="/">
             <img src="/luis_banner.svg" alt="Luis Clague" className="w-64" />
           </Link>
           <div id="right-navbar" className="flex">
-            <div className="navcontainer-content flex py-5 text-center">
-              Writing
-            </div>
-            <div className="navcontainer-content flex py-5 text-center">
-              About Me
-            </div>
-            <div className="align-center flex border-l-2 border-r-2 border-black bg-black p-2 py-5 text-white hover:bg-accent hover:text-black">
+            <div className="navcontainer-content m-auto flex">Writing</div>
+            <div className="navcontainer-content m-auto flex">About Me</div>
+            <div className="flex border-black bg-black p-2 py-5 text-white hover:border-t-0 hover:border-b-0 hover:bg-accent hover:text-black sm:border-2">
               say hello
             </div>
           </div>
@@ -34,16 +30,18 @@ export default function Builder() {
         <div className="py-5 text-center">
           <p className="text-4xl">glad you're here :)</p>
           <p>
-            TLDR; i enjoy doing scary things and proving to myself that they're
-            not scary after all
+            TLDR; here's an amalgam of things I've chosen to spend my silly
+            little life doing
           </p>
         </div>
-        <div className="flex flex-col py-3 md:m-auto lg:w-[60%]">
-          <LiteYouTubeEmbed
-            id="hRySxLdrRZQ"
-            title="Soccer across europe"
-            poster="maxresdefault"
-          />
+        <div className="main-content">
+          <div className="rounded-lg">
+            <LiteYouTubeEmbed
+              id="hRySxLdrRZQ"
+              title="Soccer across europe"
+              poster="maxresdefault"
+            />
+          </div>
         </div>
       </div>
     </div>
