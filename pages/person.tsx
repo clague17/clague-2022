@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Link from 'next/link'
+import LiteYouTubeEmbed from 'react-lite-youtube-embed'
 
 export default function Builder() {
   return (
@@ -36,6 +37,13 @@ export default function Builder() {
             TLDR; i enjoy doing scary things and proving to myself that they're
             not scary after all
           </p>
+        </div>
+        <div className="flex flex-col py-3 md:m-auto lg:w-[60%]">
+          <LiteYouTubeEmbed
+            id="hRySxLdrRZQ"
+            title="Soccer across europe"
+            poster="maxresdefault"
+          />
         </div>
       </div>
     </div>
