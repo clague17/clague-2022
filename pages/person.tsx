@@ -35,12 +35,14 @@ export default function Builder() {
           </p>
         </div>
         <div className="main-content">
-          <div className="rounded-lg">
-            <LiteYouTubeEmbed
-              id="hRySxLdrRZQ"
-              title="Soccer across europe"
-              poster="maxresdefault"
-            />
+          <div className="rounded-xl bg-black">
+            <div className="p-1">
+              <LiteYouTubeEmbed
+                id="hRySxLdrRZQ"
+                title="Soccer across europe"
+                poster="maxresdefault"
+              />
+            </div>
           </div>
         </div>
       </div>
