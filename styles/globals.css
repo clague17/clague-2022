@@ -4,6 +4,14 @@
 @tailwind components;
 @tailwind utilities;
 
+/* NAV CONTAINER CONTENT */
+
+.navcontainer-content {
+  @apply mx-5 border-b-2 border-transparent transition duration-150 hover:border-black;
+}
+
+/* HOMEPAGE CARDS */
+
 .card-wrap {
   @apply my-10 mx-5 flex flex-col rounded-lg border-2 border-black bg-yellow-300 md:my-0 lg:mx-10;
 }
@@ -20,12 +28,17 @@
   @apply rounded-b-md border-black bg-white px-2 pb-2;
 }
 
-.navcontainer-content {
-  @apply mx-5 border-b-2 border-transparent transition duration-150 hover:border-black;
+.card-wrap:hover {
+  box-shadow: 6px 6px 0 0 #000;
+  -webkit-transform: translate(-6px, -6px);
+  -ms-transform: translate(-6px, -6px);
+  transform: translate(-6px, -6px);
 }
 
+/* PROJECTS LIST THINGS */
+
 .project-card {
-  @apply mx-5 my-2 flex flex-col rounded-lg border-2 border-black bg-gray-100 hover:bg-gray-300 md:flex-row;
+  @apply mx-5 flex flex-col rounded-lg border-2 border-black bg-gray-100 hover:bg-gray-300 md:flex-row;
 }
 
 .project-card-thumbnail {
@@ -36,9 +49,6 @@
   @apply mx-5;
 }
 
-.card-wrap:hover {
-  box-shadow: 6px 6px 0 0 #000;
-  -webkit-transform: translate(-6px, -6px);
-  -ms-transform: translate(-6px, -6px);
-  transform: translate(-6px, -6px);
+.projects-list {
+  @apply flex flex-col space-y-4 py-3 md:m-auto lg:w-[60%];
 }
