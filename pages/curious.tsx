@@ -33,90 +33,74 @@ export default function Curious() {
       </main>
       <div className="flex w-full flex-col border-black">
         <div className="py-5 text-center">
-          <p className="text-4xl">excellent choice—welcome to my garage!</p>
-          <p>
-            TLDR; I'm a software engineer interested in accessibility, crypto,
-            and cool shiny things that solve tough difficult problems
-          </p>
+          <p className="text-4xl">welcome! here's what i'm nerding out about</p>
+          <p>right now: van life, learning about nature, and techno-optimism</p>
         </div>
-        <div id="projects-list">
-          <div className="z-5 h-80vh flex flex-col py-3 md:m-auto md:w-[80vh] lg:w-[60%]">
-            <div id="project" className="project-card">
-              <div className="project-card-thumbnail">
-                <img
-                  src="/new-poke-dex-cap.gif"
-                  alt="ricehouse"
-                  className="object-contain"
-                />
-              </div>
-              <div className="flex flex-col p-4 text-left">
-                <p className="text-lg font-light">
-                  how do I get involved with blockchain?
-                </p>
-                <p className="text-3xl font-bold">pokéDEX</p>
-                <div className="flex w-full py-2">
-                  <p className="border-2 border-black bg-info px-2">
-                    Typescript
-                  </p>
-                  <p className="border-t-2 border-b-2 border-r-2 border-black bg-yellow-300 px-2">
-                    TailwindCSS
-                  </p>
-                  <p className="border-t-2 border-b-2 border-r-2 border-black bg-orange px-2">
-                    Rust
-                  </p>
-                </div>
-                <p>
-                  A fully functional decentralized exchange live on Solana
-                  devnet. Playground for learning about token accounts, PDAs,
-                  CPIs, and all things Solana development. Learned Rust basics
-                  to implement smart contract that regulates the escrow program
-                  necessary for the DEX.
-                </p>
-              </div>
+        <div id="projects-list" className="projects-list">
+          <div id="project" className="project-card">
+            <div className="project-card-thumbnail">
+              <img
+                src="/new-poke-dex-cap.gif"
+                alt="poke-dex"
+                className="object-cover"
+              />
             </div>
-            <div className="project-card">
-              <div className="project-card-thumbnail">
-                <img
-                  src="/pokecandy-cap.gif"
-                  alt="pokecandy"
-                  className="object-contain"
-                />
-              </div>
-              <div className="flex flex-col p-4 text-left">
-                <p className="text-lg font-light">
-                  what are NFTs and how do they work?
+            <div className="flex flex-col p-4 text-left">
+              <p className="text-lg font-light">
+                how do I get involved with blockchain?
+              </p>
+              <p className="text-3xl font-bold">pokéDEX</p>
+              <div className="flex w-full py-2">
+                <p className="border-2 border-black bg-info px-2">Typescript</p>
+                <p className="border-t-2 border-b-2 border-r-2 border-black bg-yellow-300 px-2">
+                  TailwindCSS
                 </p>
-                <p className="text-3xl font-bold">PokéCandy Drop</p>
-                <div className="flex w-full py-2">
-                  <p className="border-2 border-black bg-info px-2">
-                    Typescript
-                  </p>
-                  <p className="border-t-2 border-b-2 border-r-2 border-black bg-yellow-300 px-2">
-                    ChakraUI
-                  </p>
-                  <p className="border-t-2 border-b-2 border-r-2 border-black bg-green px-2">
-                    Anchor
-                  </p>
-                </div>
-                <p>
-                  A fully functional CandyMachine v1 NFT minting site live on
-                  Solana devnet. Playground for learning about integrating with
-                  Phantom, using Anchor and solana/web3.js to create token
-                  accounts and mint to users. Mint pokemon cards on Solana
-                  devnet!
+                <p className="border-t-2 border-b-2 border-r-2 border-black bg-orange px-2">
+                  Rust
                 </p>
               </div>
+              <p>
+                A fully functional decentralized exchange live on Solana devnet.
+                Learned about token accounts, PDAs, CPIs, and Rust basics to
+                implement smart contract that regulates the escrow program
+                necessary for the DEX.
+              </p>
             </div>
           </div>
-        </div>
-        <div className="flex flex-col md:m-auto md:w-[80%] md:flex-row md:flex-row lg:w-[60%]">
-          <div id="project" className="project-card">
-            <div className="project-card-thumbnail md:w-full">
-              <div className="md:rounder-l-lg w-full rounded-lg border-black bg-white md:rounded-r-none md:border-r-2">
+          <div className="project-card">
+            <div className="project-card-thumbnail">
+              <img
+                src="/pokecandy-cap.gif"
+                alt="pokecandy"
+                className="object-cover"
+              />
+            </div>
+            <div className="flex flex-col p-4 text-left">
+              <p className="text-lg font-light">how do solana NFTs work?</p>
+              <p className="text-3xl font-bold">PokéCandy Drop</p>
+              <div className="flex w-full py-2">
+                <p className="border-2 border-black bg-info px-2">Typescript</p>
+                <p className="border-t-2 border-b-2 border-r-2 border-black bg-yellow-300 px-2">
+                  ChakraUI
+                </p>
+                <p className="border-t-2 border-b-2 border-r-2 border-black bg-green px-2">
+                  Anchor
+                </p>
+              </div>
+              <p>
+                A CandyMachine v1 NFT minting site live on Solana devnet.
+                Playground for integrating Phantom, using Anchor and
+                solana/web3.js to create token accounts and mint to users.
+              </p>
+            </div>
+          </div>
+          <div className="project-card">
+            <div className="project-card-thumbnail">
+              <div className="w-full border-b-2 border-black bg-white md:rounded-l-lg md:border-b-0 md:border-r-2">
                 <img
                   src="/ricehouse.png"
                   alt="ricehouse"
-                  className="w-full object-contain"
+                  className="rounded-t-lg object-cover p-4"
                 />
               </div>
             </div>

@@ -11,13 +11,13 @@ export default function Home() {
     import('@lottiefiles/lottie-player')
   })
   return (
-    <div className="flex min-h-screen flex-col items-center justify-center pt-2">
+    <div className="flex min-h-screen flex-col items-center justify-center">
       <Head>
         <title>Luis</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="px-05 flex w-full flex-1 flex-col items-center justify-center text-center">
+      <main className="flex w-full flex-1 flex-col items-center justify-center text-center">
         <img src="/luis_banner.svg" alt="Luis Clague" className="w-full" />
         <div className="flex w-full justify-center border-t-2 border-b-2 border-black pl-2">
           <div id="navcontainer" className="align-center flex py-5">
@@ -52,10 +52,8 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className="flex w-full flex-col bg-red md:h-[90vh]">
-          <div className="md:hidden">
-            <Marquee text={'• Choose your own adventure!'} />
-          </div>
+        <div className="flex w-full flex-col bg-red md:h-[100vh]">
+          <Marquee text={'• Choose your own adventure!'} />
           <div
             id="character-desktop"
             className="flex h-[100%] flex-col justify-between md:flex-row"
@@ -112,9 +110,6 @@ export default function Home() {
                 </div>
               </Link>
             </div>
-          </div>
-          <div className="hidden md:flex">
-            <Marquee text={'• Choose your own adventure!'} />
           </div>
         </div>
       </main>

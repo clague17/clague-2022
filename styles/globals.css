@@ -50,11 +50,23 @@
 }
 
 .projects-list {
-  @apply flex flex-col space-y-4 py-3 md:m-auto lg:w-[60%];
+  @apply flex flex-col space-y-4 py-3 md:m-auto lg:w-[80%];
 }
 
 .main-content {
-  @apply mx-6 flex flex-col justify-center py-3 sm:mx-auto sm:w-[80%] lg:w-[60%];
+  @apply mx-6 flex flex-col justify-center space-y-4 py-3 sm:mx-auto sm:w-[80%] lg:w-[80%];
+}
+
+.main-grid {
+  @apply flex flex-col sm:mx-auto sm:w-[80%] lg:w-[80%];
+}
+
+.grid-row {
+  @apply flex w-full justify-between py-2;
+}
+
+.grid-item {
+  @apply w-[60%] px-2;
 }
 
 /* YOUTUBE EMBED */

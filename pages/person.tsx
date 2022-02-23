@@ -34,10 +34,9 @@ export default function Builder() {
             little life doing
           </p>
         </div>
-        <div className="main-content">
-          <div id="person-item">
-            <h1 className="py-3 text-4xl">I love soccer</h1>
-            <div className="rounded-xl bg-black">
+        <div className="main-grid">
+          <div className="grid-row">
+            <div className="mx-2 w-[60%] rounded-xl bg-black">
               <div className="p-1">
                 <LiteYouTubeEmbed
                   id="hRySxLdrRZQ"
@@ -45,6 +44,33 @@ export default function Builder() {
                   poster="maxresdefault"
                 />
               </div>
+            </div>
+            <div className="mx-2 flex w-[40%] rounded-xl bg-black">
+              <img
+                className="rounded-xl object-cover p-1"
+                src="/in_flight.gif"
+                alt="skydiving"
+              />
+            </div>
+          </div>
+          <div className="grid-row">
+            <div className="mx-2 flex w-[33%] flex-col rounded-xl bg-black">
+              <h1 className="align-center m-auto text-white">We're here</h1>
+            </div>
+            <div className="mx-2 flex w-[34%] flex-col rounded-xl bg-black">
+              <h1 className="align-center m-auto text-white">We're here</h1>
+            </div>
+            <div className="mx-2 flex w-[33%] flex-col rounded-xl bg-black">
+              <h1 className="align-center m-auto text-white">We're here</h1>
+            </div>
+          </div>
+          <div id="person-item">
+            <div className="py-3">
+              <h1 className="text-4xl">i learned to skydive</h1>
+              <h1 className="text-xl">Nov 2020</h1>
+            </div>
+            <div className="rounded-xl bg-black">
+              <div className="p-1"></div>
             </div>
           </div>
         </div>
