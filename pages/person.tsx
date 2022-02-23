@@ -36,7 +36,7 @@ export default function Builder() {
         </div>
         <div className="main-grid">
           <div className="grid-row">
-            <div className="mx-2 w-[60%] rounded-xl bg-black">
+            <div className="mx-2 w-full rounded-xl bg-black md:w-[60%]">
               <div className="p-1">
                 <LiteYouTubeEmbed
                   id="hRySxLdrRZQ"
@@ -45,7 +45,7 @@ export default function Builder() {
                 />
               </div>
             </div>
-            <div className="mx-2 flex w-[40%] rounded-xl bg-black">
+            <div className="mx-1 flex w-full rounded-xl bg-black md:w-[40%]">
               <img
                 className="rounded-xl object-cover p-1"
                 src="/in_flight.gif"
@@ -54,23 +54,15 @@ export default function Builder() {
             </div>
           </div>
           <div className="grid-row">
-            <div className="mx-2 flex w-[33%] flex-col rounded-xl bg-black">
+            <div className="mx-1 flex w-full rounded-xl bg-black md:w-[50%]">
+              <img
+                className="rounded-xl object-cover p-1"
+                src="/half-marathon.jpg"
+                alt="half-marathon"
+              />
+            </div>
+            <div className="mx-2 flex w-[50%] flex-col rounded-xl bg-black">
               <h1 className="align-center m-auto text-white">We're here</h1>
-            </div>
-            <div className="mx-2 flex w-[34%] flex-col rounded-xl bg-black">
-              <h1 className="align-center m-auto text-white">We're here</h1>
-            </div>
-            <div className="mx-2 flex w-[33%] flex-col rounded-xl bg-black">
-              <h1 className="align-center m-auto text-white">We're here</h1>
-            </div>
-          </div>
-          <div id="person-item">
-            <div className="py-3">
-              <h1 className="text-4xl">i learned to skydive</h1>
-              <h1 className="text-xl">Nov 2020</h1>
-            </div>
-            <div className="rounded-xl bg-black">
-              <div className="p-1"></div>
             </div>
           </div>
         </div>
